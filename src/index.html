@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        max-width: 250px;
+      }
+
+      #images > ul {
+        list-style: none;
+        display: inline-flex;
+        flex-wrap: wrap;
+      }
+
+      .caption {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="cards" rows="35" cols="80"></textarea>
+    <br />
+    <button id="submit">Fetch</button>
+
+    <h2>Found cards</h2>
+    <div id="images"></div>
+
+    <h2>Missing</h2>
+    <div id="missing"></div>
+
+    <script>
+      document.getElementById("submit").addEventListener("click", (ev) => {
+        const cardList = document.getElementById("cards").value;
+        const cards = cardList.split("\n");
+
+        const imagesListNode = document.createElement("ul");
+        const missingListNode = document.createElement("ul");
+
+        imagesListNode.innerHTML = "";
+        missingListNode.innerHTML = "";
+
+        cards.forEach((card) => {
+          if (!card) {
+            return false;
+          }
+          const [name, ptcgo, id, note] = card.split(",");
+
+          if(name === 'name' || note === 'no-image' || note === 'no-entry' || note === 'no-set') { return false;}
+          const URL = "https://api.pokemontcg.io/v1/cards/";
+
+          fetch(`${URL}${id}`)
+            .then((resp) => resp.json())
+            .then((card) => {
+              if (card.status === 404) {
+                const li = document.createElement("li");
+                li.innerText = `${name}: ${id}`;
+                missingListNode.appendChild(li);
+              } else {
+                const li = document.createElement("li");
+                const image = document.createElement("img");
+                image.src = card.card.imageUrl;
+
+                const caption = document.createElement("span");
+                caption.innerText = `${ptcgo} / ${id}`;
+                caption.classList.add("caption");
+
+                const br = document.createElement("br");
+
+                li.appendChild(image);
+                li.appendChild(br);
+                li.appendChild(caption);
+                imagesListNode.appendChild(li);
+              }
+            });
+        });
+
+        document.getElementById("images").appendChild(imagesListNode);
+        document.getElementById("missing").appendChild(missingListNode);
+      });
+    </script>
+  </body>
+</html>
