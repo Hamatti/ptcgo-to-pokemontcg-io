@@ -46,7 +46,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] Boundaries Crossed
 - [ ] Dragons Exalted
 - [ ] Dark Explorers
-- [ ] Next Destinies
+- [x] Next Destinies
 - [x] Noble Victories
 - [x] Emerging Powers
 - [x] Dragon Vault
