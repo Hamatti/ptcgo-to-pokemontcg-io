@@ -43,7 +43,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] Plasma Blast
 - [ ] Plasma Freeze
 - [ ] Plasma Storm
-- [ ] Boundaries Crossed
+- [x] Boundaries Crossed
 - [x] Dragons Exalted
 - [x] Dark Explorers
 - [x] Next Destinies
