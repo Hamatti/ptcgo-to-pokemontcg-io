@@ -1,0 +1,22 @@
+{
+  "name": "ptcgo-pokemontcgio",
+  "version": "1.0.0",
+  "description": "Majority of the [Pokemon TCG Online](https://www.pokemon.com/us/pokemon-tcg/play-online/download/) codes map directly to [PokemonTCG.io](http://pokemontcg.io/) ids but there's a lot that don't, like the Trainer Kits, some special collections and so on. Also, some cards like secret rare trainers are missing from Pokemontcg.io.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build-json.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamatti/ptcgo-to-pokemontcg-io.git"
+  },
+  "author": "Juha-Matti Santala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hamatti/ptcgo-to-pokemontcg-io/issues"
+  },
+  "homepage": "https://github.com/Hamatti/ptcgo-to-pokemontcg-io#readme",
+  "dependencies": {
+    "csv-load-sync": "^1.0.0"
+  }
+}
