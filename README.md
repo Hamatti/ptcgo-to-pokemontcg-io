@@ -82,7 +82,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] Primal Clash
 - [ ] Phantom Forces
 - [ ] Furious Fists
-- [ ] Flashfire
+- [x] Flashfire
 - [x] XY
 - [ ] Kalos Starter Set
 - [ ] XY Black Star Promos
@@ -126,3 +126,5 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 ## Extra Notes
 
 - Red Star Promos are numbered completely wrong. Luckily, most of them currently are Champions Festivals but _RSP 02_ can be either Champions Festival **or** Maxie's Hidden Ball Trick. Currently it always points to Champions Festival.
+
+- In XY Flashfire, full art Blacksmith (xy2-88a) is exported from PTCGO as FLF 88 so it will always return regular art.
