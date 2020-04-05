@@ -37,7 +37,7 @@ const newLines = [
 
       if (matches) {
         const [, name, fullset, number, ,] = matches;
-        return `"${name}","${fullset},${api}-${number},`;
+        return `"${name}","${fullset}",${api}-${number},`;
       } else {
         return null;
       }
