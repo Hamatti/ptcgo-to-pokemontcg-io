@@ -21,7 +21,7 @@ csvFiles.forEach((filename) => {
       return;
     }
 
-    mapping[ptcgo] = api;
+    mapping[ptcgo] = { api, notes: notes !== "" ? notes : null };
   });
 });
 
