@@ -40,7 +40,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 **Black & White Series**
 
 - [ ] Legendary Treasures
-- [ ] Plasma Blast
+- [x] Plasma Blast
 - [x] Plasma Freeze
 - [x] Plasma Storm
 - [x] Boundaries Crossed
