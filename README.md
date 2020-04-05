@@ -4,6 +4,19 @@ Majority of the [Pokemon TCG Online](https://www.pokemon.com/us/pokemon-tcg/play
 
 This project aims to map every PTCGO card code into Pokemontcg.io ID. If certain card doesn't exist, I've manually downgraded them to same card of different rarity.
 
+## How to run
+
+For each set you want to include, create a CSV file in `cards/` folder with header `name, ptcgo, api, notes` and each card on its own line. Column `ptcgo` should be the export code from PTCGO and `api` the corresponding id in PokemonTCG.io API. For `notes`, see the definitions below.
+
+Run
+
+```
+npm install
+npm run build
+```
+
+to convert csv files into a JSON with PTCGO codes as keys and API ids as values. This creates a new file `cards.json` in the root of the project.
+
 ## Testing platform
 
 For manual testing, there's `src/index.html`. Here, you can copy-paste contents of a CSV file from `cards/` and it will show the images as well as a list of cards that were not found.
