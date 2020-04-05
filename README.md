@@ -81,7 +81,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] Double Crisis
 - [ ] Primal Clash
 - [ ] Phantom Forces
-- [ ] Furious Fists
+- [x] Furious Fists
 - [x] Flashfire
 - [x] XY
 - [ ] Kalos Starter Set
