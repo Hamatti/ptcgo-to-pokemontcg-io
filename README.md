@@ -126,7 +126,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [x] Flashfire
 - [x] XY
 - [ ] Kalos Starter Set
-- [ ] XY Black Star Promos
+- [x] XY Black Star Promos
 - [x] XY Trainer Kit - Suicune
 - [x] XY Trainer Kit - Pikachu Libre
 - [ ] XY Trainer Kit - Latias
