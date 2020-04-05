@@ -52,7 +52,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [x] Dragon Vault
 - [x] Black & White
 - [x] Black & White Black Star Promos
-- [ ] Trainer Kit - Excadrill
+- [x] Trainer Kit - Excadrill
 - [ ] Trainer Kit - Zoroark
 
 **XY Series**
