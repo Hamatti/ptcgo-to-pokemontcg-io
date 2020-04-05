@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node build-json.js",
-    "check": "node utils/check-missing.js"
+    "check": "node utils/check-missing.js",
+    "format": "node utils/format.js"
   },
   "repository": {
     "type": "git",

@@ -17,6 +17,16 @@ npm run build
 
 to convert csv files into a JSON with PTCGO codes as keys and API ids as values. This creates a new file `cards.json` in the root of the project.
 
+### Naive conversion
+
+To get started after exporting and pasting a PTCGO export, run
+
+```
+npm run format [filename] [PTCGO Set Code] [API set code]
+```
+
+This will do an in-place conversion.
+
 ## Testing platform
 
 ### Visual with web page
