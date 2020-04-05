@@ -19,9 +19,21 @@ to convert csv files into a JSON with PTCGO codes as keys and API ids as values.
 
 ## Testing platform
 
+### Visual with web page
+
 For manual testing, there's `src/index.html`. Here, you can copy-paste contents of a CSV file from `cards/` and it will show the images as well as a list of cards that were not found.
 
 The script will skip header line, empty lines and any lines with `no-entry`, `no-image` or `no-set` note.
+
+### Finding missing cards from export
+
+Manually clicking through PTCGO UI is error prone. You can run
+
+```
+npm run check [filename]
+```
+
+that will check if all the numbers are consecutive and will let you know if something's missing in between.
 
 ## Notes codes
 

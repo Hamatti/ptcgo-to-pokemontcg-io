@@ -4,7 +4,8 @@
   "description": "Majority of the [Pokemon TCG Online](https://www.pokemon.com/us/pokemon-tcg/play-online/download/) codes map directly to [PokemonTCG.io](http://pokemontcg.io/) ids but there's a lot that don't, like the Trainer Kits, some special collections and so on. Also, some cards like secret rare trainers are missing from Pokemontcg.io.",
   "main": "index.js",
   "scripts": {
-    "build": "node build-json.js"
+    "build": "node build-json.js",
+    "check": "node utils/check-missing.js"
   },
   "repository": {
     "type": "git",
