@@ -41,7 +41,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 
 - [ ] Legendary Treasures
 - [ ] Plasma Blast
-- [ ] Plasma Freeze
+- [x] Plasma Freeze
 - [x] Plasma Storm
 - [x] Boundaries Crossed
 - [x] Dragons Exalted
