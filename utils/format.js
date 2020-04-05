@@ -27,7 +27,7 @@ const newLines = [
   "name,ptcgo,api,notes",
   ...lines
     .map((line) => {
-      const regex = `\\*\\s\\d+\\s([A-Za-z0-9é' ?.&()♀♂#-]+)\\s(${ptcgo} (\\d+))`;
+      const regex = `\\*\\s\\d+\\s([A-Za-z0-9é' ?!.&()♀♂#-]+)\\s(${ptcgo} (\\d+))`;
       const matches = line.match(regex);
 
       if (argv.debug) {
