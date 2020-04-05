@@ -100,7 +100,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] BREAKthrough
 - [ ] Ancient Origins
 - [ ] Roaring Skies
-- [ ] Double Crisis
+- [x] Double Crisis
 - [x] Primal Clash
 - [x] Phantom Forces
 - [x] Furious Fists
