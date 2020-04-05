@@ -4,6 +4,25 @@ Majority of the [Pokemon TCG Online](https://www.pokemon.com/us/pokemon-tcg/play
 
 This project aims to map every PTCGO card code into Pokemontcg.io ID. If certain card doesn't exist, I've manually downgraded them to same card of different rarity.
 
+## Workflow
+
+My current workflow has been this:
+
+1. Create new empty file to `cards/` with naming convention `[block-set].csv`
+2. Go to PTCGO, create a new Unlimited deck.
+3. Filter cards by set using the grid UI option. Add one of each card (skip different rarities for same card).
+4. Export, paste to file.
+5. Do another run, this time adding full-art cards. Export and paste to file.
+6. Repeat if needed (for example when there's normal, full art and secret rare of the same card or multiple ACE SPEC in set).
+7. Run `npm run format [filename] [PTCGO set] [API set]`
+8. Run `npm run check [filename]`
+9. Fix issues if any arise. Check from PokemonTCG.io for what the cards should be.
+10. Copy-paste to browser `src/index.html` to see if something's missing.
+11. If something is missing, make adjustments and add notes.
+12. Mark to README that new set is added.
+13. Add new csv file and README update to git and commit.
+14. Run `npm run build` to build a new JSON.
+
 ## How to run
 
 For each set you want to include, create a CSV file in `cards/` folder with header `name, ptcgo, api, notes` and each card on its own line. Column `ptcgo` should be the export code from PTCGO and `api` the corresponding id in PokemonTCG.io API. For `notes`, see the definitions below.
