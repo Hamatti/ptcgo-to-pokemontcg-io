@@ -97,7 +97,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 - [ ] Fates Collide
 - [ ] Generations
 - [ ] BREAKPoint
-- [ ] BREAKthrough
+- [x] BREAKthrough
 - [x] Ancient Origins
 - [x] Roaring Skies
 - [x] Double Crisis
