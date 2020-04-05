@@ -113,7 +113,7 @@ In `cards/*.csv` files, last column is called _notes_ and is used to provide pro
 
 - [ ] Evolutions
 - [ ] Steam Siege
-- [ ] Fates Collide
+- [x] Fates Collide
 - [x] Generations
 - [x] BREAKPoint
 - [x] BREAKthrough
