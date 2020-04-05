@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Hamatti/ptcgo-to-pokemontcg-io#readme",
   "dependencies": {
-    "csv-load-sync": "^1.0.0"
+    "csv-load-sync": "^1.0.0",
+    "yargs": "^15.3.1"
   }
 }
